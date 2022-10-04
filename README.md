@@ -1,2 +1,2 @@
 # FirstPCB
- My first try at making a 65% keyboard pcb
+ My first try at making a 2x2 macro pcb
