@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:firstpcb-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -37,12 +38,6 @@ F 3 "" H 3900 2250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3900 2400 3900 2250
-Wire Wire Line
-	4100 2400 4000 2400
-Wire Wire Line
-	4000 2400 3900 2400
-Connection ~ 4000 2400
-Connection ~ 3900 2400
 $Comp
 L power:GND #PWR0102
 U 1 1 633E5F9A
@@ -54,9 +49,6 @@ F 3 "" H 3500 6000 50  0001 C CNN
 	1    3500 6000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4000 6000 3900 6000
-Connection ~ 3900 6000
 Wire Wire Line
 	3500 6000 3900 6000
 $Comp
@@ -97,10 +89,10 @@ F 3 "~" H 3100 3700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R1
+L Device:R_Small R3
 U 1 1 633F12B6
 P 2800 3800
-F 0 "R1" V 2604 3800 50  0000 C CNN
+F 0 "R3" V 2604 3800 50  0000 C CNN
 F 1 "22" V 2695 3800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 2800 3800 50  0001 C CNN
 F 3 "~" H 2800 3800 50  0001 C CNN
@@ -116,10 +108,10 @@ Wire Wire Line
 Wire Wire Line
 	3000 3700 2550 3700
 $Comp
-L Device:C_Small C6
+L Device:C_Small C3
 U 1 1 633F29F6
 P 2950 4100
-F 0 "C6" H 3042 4146 50  0000 L CNN
+F 0 "C3" H 3042 4146 50  0000 L CNN
 F 1 "1uF" H 3042 4055 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2950 4100 50  0001 C CNN
 F 3 "~" H 2950 4100 50  0001 C CNN
@@ -153,10 +145,10 @@ F 3 "~" H 3100 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C5
+L Device:C_Small C6
 U 1 1 63405601
 P 2700 4850
-F 0 "C5" H 2792 4896 50  0000 L CNN
+F 0 "C6" H 2792 4896 50  0000 L CNN
 F 1 "0.1uF" H 2792 4805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2700 4850 50  0001 C CNN
 F 3 "~" H 2700 4850 50  0001 C CNN
@@ -164,10 +156,10 @@ F 3 "~" H 2700 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C2
+L Device:C_Small C5
 U 1 1 63406236
 P 2300 4850
-F 0 "C2" H 2392 4896 50  0000 L CNN
+F 0 "C5" H 2392 4896 50  0000 L CNN
 F 1 "0.1uF" H 2392 4805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2300 4850 50  0001 C CNN
 F 3 "~" H 2300 4850 50  0001 C CNN
@@ -175,10 +167,10 @@ F 3 "~" H 2300 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C1
+L Device:C_Small C4
 U 1 1 63406D59
 P 1900 4850
-F 0 "C1" H 1992 4896 50  0000 L CNN
+F 0 "C4" H 1992 4896 50  0000 L CNN
 F 1 "0.1uF" H 1992 4805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 1900 4850 50  0001 C CNN
 F 3 "~" H 1900 4850 50  0001 C CNN
@@ -258,34 +250,27 @@ $EndComp
 Wire Wire Line
 	3400 2900 2900 2900
 $Comp
-L Device:C_Small C3
+L Device:C_Small C1
 U 1 1 634150DE
-P 2550 2800
-F 0 "C3" V 2321 2800 50  0000 C CNN
-F 1 "22pF" V 2412 2800 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2550 2800 50  0001 C CNN
-F 3 "~" H 2550 2800 50  0001 C CNN
-	1    2550 2800
+P 2550 2750
+F 0 "C1" V 2321 2750 50  0000 C CNN
+F 1 "22pF" V 2412 2750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2550 2750 50  0001 C CNN
+F 3 "~" H 2550 2750 50  0001 C CNN
+	1    2550 2750
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C4
+L Device:C_Small C2
 U 1 1 6341688C
 P 2550 3200
-F 0 "C4" V 2321 3200 50  0000 C CNN
+F 0 "C2" V 2321 3200 50  0000 C CNN
 F 1 "22pF" V 2412 3200 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2550 3200 50  0001 C CNN
 F 3 "~" H 2550 3200 50  0001 C CNN
 	1    2550 3200
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2900 2900 2650 2900
-Wire Wire Line
-	2650 2900 2650 2800
-Connection ~ 2900 2900
-Wire Wire Line
-	2450 2800 2450 3200
 Wire Wire Line
 	2650 3200 2650 3100
 Connection ~ 2900 3100
@@ -301,28 +286,7 @@ F 3 "" H 2450 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2450 3200 2450 3300
-Connection ~ 2450 3200
-Wire Wire Line
-	2800 3000 2800 3100
-Wire Wire Line
-	2800 3100 2800 3300
-Wire Wire Line
-	2800 3300 2450 3300
-Connection ~ 2450 3300
-Wire Wire Line
 	3000 3000 3050 3000
-Wire Wire Line
-	3050 3000 3050 3100
-Wire Wire Line
-	3050 3100 3050 3300
-Wire Wire Line
-	3050 3300 2800 3300
-Connection ~ 2800 3300
-Wire Wire Line
-	2650 3100 2900 3100
-Wire Wire Line
-	2900 3100 3400 3100
 $Comp
 L Switch:SW_Push SW1
 U 1 1 6341F996
@@ -352,10 +316,10 @@ Wire Wire Line
 Wire Wire Line
 	3300 2700 3350 2700
 $Comp
-L Device:R_Small R3
+L Device:R_Small R1
 U 1 1 6342361B
 P 3350 2350
-F 0 "R3" H 3409 2396 50  0000 L CNN
+F 0 "R1" H 3409 2396 50  0000 L CNN
 F 1 "10k" H 3409 2305 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 3350 2350 50  0001 C CNN
 F 3 "~" H 3350 2350 50  0001 C CNN
@@ -458,7 +422,7 @@ U 1 1 6343346E
 P 8350 3100
 F 0 "MX1" H 8383 3323 60  0000 C CNN
 F 1 "MX-NoLED" H 8383 3249 20  0000 C CNN
-F 2 "MX_Alps_Hybrid:MX-8U-NoLED" H 7725 3075 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U" H 7725 3075 60  0001 C CNN
 F 3 "" H 7725 3075 60  0001 C CNN
 	1    8350 3100
 	1    0    0    -1  
@@ -477,12 +441,12 @@ $EndComp
 Wire Wire Line
 	8150 3250 8300 3250
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX3
+L MX_Alps_Hybrid:MX-NoLED MX2
 U 1 1 63440E49
 P 9350 3100
-F 0 "MX3" H 9383 3323 60  0000 C CNN
+F 0 "MX2" H 9383 3323 60  0000 C CNN
 F 1 "MX-NoLED" H 9383 3249 20  0000 C CNN
-F 2 "MX_Alps_Hybrid:MX-8U-NoLED" H 8725 3075 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U" H 8725 3075 60  0001 C CNN
 F 3 "" H 8725 3075 60  0001 C CNN
 	1    9350 3100
 	1    0    0    -1  
@@ -501,12 +465,12 @@ $EndComp
 Wire Wire Line
 	9150 3250 9300 3250
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX2
+L MX_Alps_Hybrid:MX-NoLED MX3
 U 1 1 63442A22
 P 8350 3800
-F 0 "MX2" H 8383 4023 60  0000 C CNN
+F 0 "MX3" H 8383 4023 60  0000 C CNN
 F 1 "MX-NoLED" H 8383 3949 20  0000 C CNN
-F 2 "MX_Alps_Hybrid:MX-8U-NoLED" H 7725 3775 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U" H 7725 3775 60  0001 C CNN
 F 3 "" H 7725 3775 60  0001 C CNN
 	1    8350 3800
 	1    0    0    -1  
@@ -530,7 +494,7 @@ U 1 1 63444425
 P 9350 3800
 F 0 "MX4" H 9383 4023 60  0000 C CNN
 F 1 "MX-NoLED" H 9383 3949 20  0000 C CNN
-F 2 "MX_Alps_Hybrid:MX-8U-NoLED" H 8725 3775 60  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U" H 8725 3775 60  0001 C CNN
 F 3 "" H 8725 3775 60  0001 C CNN
 	1    9350 3800
 	1    0    0    -1  
@@ -576,4 +540,53 @@ Text GLabel 8500 2700 1    50   Input ~ 0
 COL0
 Text GLabel 9500 2700 1    50   Input ~ 0
 COL1
+Wire Wire Line
+	3900 2400 4000 2400
+Connection ~ 3900 2400
+Text GLabel 4600 4600 2    50   Input ~ 0
+ROW0
+Text GLabel 4600 3300 2    50   Input ~ 0
+ROW1
+Text GLabel 4600 3200 2    50   Input ~ 0
+COL0
+Text GLabel 4600 3100 2    50   Input ~ 0
+COL1
+Wire Wire Line
+	4100 2400 4000 2400
+Connection ~ 4000 2400
+Wire Wire Line
+	4000 6000 3900 6000
+Connection ~ 3900 6000
+Wire Wire Line
+	2900 3100 3050 3100
+Wire Wire Line
+	2650 3100 2800 3100
+Wire Wire Line
+	2800 3300 2450 3300
+Wire Wire Line
+	2800 3100 2800 3250
+Wire Wire Line
+	2800 3100 2900 3100
+Wire Wire Line
+	2800 3000 2800 3100
+Wire Wire Line
+	2800 3250 3050 3250
+Connection ~ 2800 3250
+Wire Wire Line
+	2800 3250 2800 3300
+Wire Wire Line
+	3050 3100 3400 3100
+Wire Wire Line
+	3050 3000 3050 3250
+Wire Wire Line
+	2450 3300 2450 3200
+Connection ~ 2450 3300
+Wire Wire Line
+	2450 3200 2450 2750
+Connection ~ 2450 3200
+Wire Wire Line
+	2650 2750 2650 2900
+Wire Wire Line
+	2650 2900 2900 2900
+Connection ~ 2900 2900
 $EndSCHEMATC
